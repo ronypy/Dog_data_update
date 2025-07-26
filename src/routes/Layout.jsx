@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Layout.css";
+
 const Layout = () => {
   return (
     <div>
@@ -12,22 +13,22 @@ const Layout = () => {
           <div className="menu">
             <ul>
               <li className="menu-item">
-                <a className="menu-links" href="/">
+                <Link className="menu-links" to="/">
                   <i className="menu-icon" key="home-button"></i>
-                  <Link to="/">🏠 Dashboard</Link>
-                </a>
+                  🏠 Dashboard
+                </Link>
               </li>
               <li className="menu-item">
-                <a className="menu-links" href="/">
+                <Link className="menu-links" to="/">
                   <i className="menu-icon"></i>
-                  <Link to="/">🔍 Search</Link>
-                </a>
+                  🔍 Search
+                </Link>
               </li>
               <li className="menu-item">
-                <a className="menu-links" href="/">
+                <Link className="menu-links" to="/">
                   <i className="menu-icon"></i>
-                  <Link to="/">ℹ️ About</Link>
-                </a>
+                  ℹ️ About
+                </Link>
               </li>
             </ul>
           </div>
